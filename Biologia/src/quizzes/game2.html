@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Predatismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilosQuiz2.css">
+</head>
+<body>
+      <main class="quiz">
+        <h2 class="introducao">Seja Bem-vindo ao quiz predatório!<br> tente acertar a pergunta</h2>
+        <div class="pergunta">
+            <h3 class="pengunta-texto">O que é a relação ecológica "predatismo"?</h3>
+            <div class="respostas">
+                <button class="botao" onclick="checkAnswer(this, false)" >É uma relação ecológica harmônica em que um animal mata e se alimenta de outro. </button>
+                <button class="botao" onclick="checkAnswer(this, true)" > É uma relação ecológica desarmônica em que um animal mata se alimenta de outro. </button>
+                <button class="botao" onclick="checkAnswer(this, false)" >É uma relação que animais da mesma espécie comem um a outro</button>
+                <button class="botao" onclick="checkAnswer(this, false)" >É uma relação harmônica onde os indivíduos vivem felizes e cooperam um com outro</button>
+        </div>
+        </div>
+        <div class="voltar">
+            <a href="../../quiz.html" class="botao-voltar">Voltar ao BioQuest</a>
+        </div>
+      </main>   
+      <script src="../js/Quiz.js"></script>
+</body>
+</html>
