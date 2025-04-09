@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada preta com 50% de opacidade */
+    z-index: -1;
+    pointer-events: none; /* Permite interações com o conteúdo abaixo */
+}
+
+main .relacao {
+    display: none;
+    height: 100vh;
+}
+
+main .relacao.selecionado {
+    display: block;
+}
+
+main .relacao.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.conteudo {
+    position: absolute;
+    top: 0%;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-relacao {
+    color: #251500;
+    font-size: 48px;
+    font-family: "Kanit";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: #000000;
+    font-family: "Lato";
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+}
+
+.botoes {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 16px;
+}
+
+.botoes .botao {
+    border: none;
+    background-color: #000000;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: tranform 0.3s ease;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+}
+
+.botoes .botao .colonia .selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #837b00;
+}
+
+.botoes .botao.predatismo.selecionado{
+    box-shadow: 0 0 10px #ff0303;
+}
+
+.botoes .botao.herbivorismo.selecionado{
+    box-shadow: 0 0 10px #27fa01;
+}
+
+.botoes .botao.inquilinismo.selecionado{
+    box-shadow: 0 0 10px #0111ff;
+}
+
+.botoes .botao.competicao.selecionado{
+    box-shadow: 0 0 10px #f78a05;
+}
+
+.jogar {
+    background-color: #f5a843;
+    color: #ffffff;
+    font-family: "Kanit";
+    font-size: 26px;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+    text-align: center;
+    position: fixed;
+    top: 42%;
+    left: 42%;
+}

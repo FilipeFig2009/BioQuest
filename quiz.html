@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioQuest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/css/resetBio.css">
+<link rel="stylesheet" href="./src/css/estilos.css">
+<link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+<body>
+    <main class="relacoes">
+        <div class="relacao selecionado">
+            <picture> 	
+                <source srcset="./src/imagens/colonia.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/colonia.png" alt="Relacao Colonia" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-relacao">Colonia</h2>
+                <p class="descricao">A relação de colônia é uma relação ecológica harmônica entre organismos da mesma espécie que estão anatomicamente unidos e cooperam entre si.</p>
+            </div>
+            <div class="jogar">
+            <a href="./src/quizzes/game1.html" class="botao-jogar">Jogar</a>   
+            </div>
+        </div>
+
+        <div class="relacao">
+            <picture>
+                <source srcset="./src/imagens/predatismo.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/predatismo.png" alt="Relacao Predatismo" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-relacao">Predatismo</h2>
+                <p class="descricao">Predatismo é uma relação ecológica em que uma espécie animal mata e come outra espécie, para se alimentar. É uma relação desarmônica, ou seja, que beneficia uma espécie em detrimento da outra.</p>
+            </div>
+            <div class="jogar">
+                <a href="./src/quizzes/game2.html" class="botao-jogar">Jogar</a>   
+                </div>
+        </div>
+
+        <div class="relacao">
+            <picture>
+                <source srcset="./src/imagens/herbivorismo.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/herbivorismo.png" alt="Relacao Herbivorismo" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-relacao">Herbivorismo</h2>
+                <p class="descricao">A herbivoria é uma relação ecológica desarmônica entre animais e plantas, em que os animais se alimentam das plantas. É um tipo de predação, onde a presa é uma planta. </p>
+            </div>
+            <div class="jogar">
+                <a href="./src/quizzes/game3.html" class="botao-jogar">Jogar</a>   
+                </div>
+        </div>
+        <div class="relacao">
+            <picture>
+                <source srcset="./src/imagens/inquilinismo.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/inquilinismo.png" alt="Relacao Inquilinismo" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-relacao">Inquilinismo</h2>
+                <p class="descricao">Inquilinismo é uma relação ecológica entre espécies diferentes na qual uma espécie vive sobre ou dentro da outra, sem causar prejuízo. É uma relação harmônica, na qual apenas uma espécie se beneficia.
+                </p>
+            </div>
+            <div class="jogar">
+                <a href="./src/quizzes/game4.html" class="botao-jogar">Jogar</a>   
+                </div>
+        </div>
+
+        <div class="relacao">
+            <picture>
+                <source srcset="./src/imagens/competicao.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/competicao.png" alt="Relacao Competicao intraespecifica" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-relacao">Competicao intraespecifica</h2>
+                <p class="descricao">A competição intraespecífica é uma relação ecológica em que indivíduos da mesma espécie disputam recursos, como alimento, água, território, luz, parceiros reprodutivos, etc.</p>
+            </div>
+            <div class="jogar">
+                <a href="./src/quizzes/game5.html" class="botao-jogar">Jogar</a>   
+                </div>
+        </div>
+    </main>
+    <ul class="botoes">
+        <li>
+            <button class="botao colonia selecionado">
+                <img src="./src/imagens/colonia-icone.png" alt="Ícone Colonia">
+            </button>
+        </li>
+        <li>
+            <button class="botao predatismo">
+                <img src="./src/imagens/predatismo-icone.png" alt="Ícone Predatismo">
+            </button>
+        </li>
+        <li>
+            <button class="botao herbivorismo">
+                <img src="./src/imagens/herbivorismo-icone.png" alt="Ícone Herbivorismo">
+            </button>
+        </li>
+        <li>
+            <button class="botao inquilinismo">
+                <img src="./src/imagens/inquilinismo-icone.png" alt="Ícone Inquilinismo">
+            </button>
+        </li>
+        <li>
+            <button class="botao competicao">
+                <img src="./src/imagens/competicao-icone.png" alt="Ícone Competicao">
+            </button>
+        </li>
+    </ul>
+    <script src="./src/js/Bio.js"></script>
+</body>
+</html>

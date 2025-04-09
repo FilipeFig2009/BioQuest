@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    background-image:  url('../imagens/inquilinismo-tela.png'); /* Caminho para a imagem */
+    background-size: cover;/* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: top; /* Centraliza a imagem */
+    
+    font-family: 'Kanit', sans-serif; /* Mantém a fonte */
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada preta com 50% de opacidade */
+    z-index: -1;
+    pointer-events: none; /* Permite interações com o conteúdo abaixo */
+}
+
+ .quiz .introducao {
+    position: absolute;
+    top: 0%;
+    font-size: 40px;
+    left: 600px;
+    justify-content: center;
+    color: #ffffff; 
+}
+
+ .pergunta {
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    font-size: 24px;
+    left: 475px;
+    justify-content: center;
+    display: flex;
+}
+
+.pergunta .pergunta-texto {
+    
+    font-size: 48px;
+    font-family: "Kanit";
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.respostas {
+    position: fixed;
+    top: 50%;
+    right: 43%;
+    width: 180px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    gap: 16px;
+}
+
+.botao {
+    background-color: #000000;
+    color: #0060fa;
+    font-family: "Kanit";
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+    text-align: center;
+}
+
+ .botao-certo {
+    background-color: green ;
+    color: white;
+}
+
+.botao-errado {
+    background-color: red ;
+    color: white;
+}
+
+.botao-voltar {
+    background-color: #000000;
+    color: #0060fa;
+    font-family: "Kanit";
+    font-size: 26px;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+    text-align: center;
+    position: fixed;
+    top: 90%;
+    left: 85%;
+}
